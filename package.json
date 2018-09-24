@@ -1,0 +1,22 @@
+{
+  "name": "todoserver",
+  "version": "1.0.0",
+  "description": "this server is for todo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "sp",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.2",
+    "nodemon": "^1.18.0",
+    "volleyball": "^1.5.1"
+  }
+}
