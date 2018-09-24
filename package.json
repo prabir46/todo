@@ -18,5 +18,8 @@
     "mongoose": "^5.2.2",
     "nodemon": "^1.18.0",
     "volleyball": "^1.5.1"
+  },
+  "engines": {
+    "node": "8.11.3"
   }
 }
