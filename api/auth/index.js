@@ -22,10 +22,13 @@ auth.post('/signup',(req,res)=>{
         if (!err){
             res.json({
                 status: 1,
-                msg: 'Data Added SucessFully'
+                msg: 'Account created!'
             })
         }else{
-            res.json(err);
+            res.json({
+                status : 0,
+                message: 'User already exist!' 
+            })
         } 
     })
         
@@ -46,7 +49,7 @@ auth.post('/login',(req,res)=>{
                 }else{
                     res.json({
                         status : 0,
-                        msg: 'password incorrect' 
+                        message: 'Username or Password incorrect!' 
                     })
                 }
             },err=>{

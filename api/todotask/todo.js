@@ -25,7 +25,9 @@ task.post('/addtask', (req, res) => {
     //res.json(req.body);
     let newtodo = new todoAddModel({
         user_id: req.body.user_id,
-        task: req.body.task
+        task: req.body.task,
+        isChecked: req.body.isChecked 
+
     });
 
     newtodo.save((err, success) => {

@@ -10,7 +10,7 @@ const todoSchema = mongoose.Schema({
         require: true
     },
     isChecked: {
-        type: Boolean,
+        type: Number,
         require: true,
         default: false
     }
